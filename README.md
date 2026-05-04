@@ -3,7 +3,7 @@
 
 # Instagram Clone - Creative Ideas Platform
 
-A full-stack social media platform for sharing creative ideas, built with FastAPI, React, and AWS.
+A full-stack social media platform for sharing creative ideas, built with FastAPI, Turborepo React, and AWS.
 
 ## 🚀 Quick Start
 
@@ -12,7 +12,7 @@ A full-stack social media platform for sharing creative ideas, built with FastAP
 - Node.js 16+
 - Docker (optional)
 
-### Local Development
+### Local Development Setup
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -27,12 +27,20 @@ pip install -r requirements.txt
 # Frontend setup
 cd ../frontend
 npm install
-
-# Run the application
-# Terminal 1 - Backend
+```
+## Run the application
+#### Backend: (Terminal 1)
+```bash
 cd backend
-uvicorn app.main:app --reload
+```
+```bash
+uvicorn apps.server.main:app --reload
+```
 
-# Terminal 2 - Frontend  
+#### Frontend: (Terminal 2)
+```bash
 cd frontend
-npm start
+```
+```bash
+pnpm start
+```
