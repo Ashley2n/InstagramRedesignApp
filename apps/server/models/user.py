@@ -1,8 +1,7 @@
 import uuid
 from datetime import datetime
 
-from pyexpat.errors import messages
-from sqlalchemy import Column, Integer, String, DateTime, Sequence, func
+from sqlalchemy import Column, String, DateTime
 from sqlalchemy.dialects.postgresql.base import UUID
 
 from apps.server.core.database import Base
