@@ -44,3 +44,22 @@ cd frontend
 ```bash
 pnpm start
 ```
+
+
+
+
+## Running Migrations
+This application uses Alembic to run migrations to a Prisma PostgreSQL database.
+
+__[Alembic Documentation](https://alembic.sqlalchemy.org/en/latest/tutorial.html#the-migration-environment)__
+
+1. Make a revision/migration version
+   
+   ```bash
+   alembic revision --autogenerate -m "Type Message"
+   ```
+2. Push Changes
+   
+    ```bash
+    alembic upgrade head
+    ```
